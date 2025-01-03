@@ -107,6 +107,8 @@ nav .furniture1 .join1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(128, 128, 128, 0.382);
 }
 .filter .filter1 {
   display: flex;
@@ -125,7 +127,7 @@ nav .furniture1 .join1 {
 }
 
 .main-section {
-  background-color: #f4f6f6;
+  background-color: #c3e4e4;
   padding: 133px 0px;
   display: flex;
   gap: 0.5rem;
@@ -175,6 +177,9 @@ nav .furniture1 .join1 {
 }
 .main-section .main2 {
   width: 70%;
+  display: flex;
+  gap: 0.2rem;
+  flex-direction: column;
   padding-top: 1.5rem;
   padding-left: 1rem;
   position: relative;
@@ -296,7 +301,7 @@ nav .furniture1 .join1 {
   border-radius: 0.5rem;
 }
 .main-section .main2 .items {
-  padding: 1rem;
+  padding: 0.1rem 1rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 0.5rem;
@@ -357,4 +362,37 @@ nav .furniture1 .join1 {
   position: absolute;
   right: 3%;
   top: 2%;
+}
+.main-section .linka {
+  background-color: rgba(215, 6, 6, 0.824);
+  padding: 0.5rem;
+  width: 100%;
+  font-weight: bolder;
+  display: none;
+}
+@media (max-width: 470px) {
+  .main-section .linka {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0.8rem;
+    overflow-x: auto;
+    background-color: white;
+  }
+}
+.main-section .linka .chair {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+  background-color: #c3e4e4;
+  border-radius: 1.3rem;
+  padding: 0.3rem 0.6rem;
+  border: 1px solid rgba(128, 128, 128, 0.382);
+}
+.main-section .linka .chair .bed {
+  width: 15px;
+  height: 15px;
+}
+.main-section .linka .chair .nalu {
+  font-size: 0.7rem;
 }/*# sourceMappingURL=style.css.map */

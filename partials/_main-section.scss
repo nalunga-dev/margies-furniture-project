@@ -1,8 +1,9 @@
 .main-section {
-  background-color: #f4f6f6;
+  background-color: #c3e4e4;
   padding: 133px 0px;
   // padding-top: rem;
   display: flex;
+  // flex-direction: column;
   gap: 0.5rem;
   @media (max-width: 920px) {
     padding-top: 70px;
@@ -52,6 +53,9 @@
     // background-color: green;
     width: 70%;
     // padding-left: 25rem;
+    display: flex;
+    gap: 0.2rem;
+    flex-direction: column;
     padding-top: 1.5rem;
     padding-left: 1rem;
     position: relative;
@@ -138,6 +142,7 @@
         }
       }
     }
+
     .bag {
       background-color: #009f7f;
       width: 10%;
@@ -168,7 +173,7 @@
     }
     .items {
       // background-color: rgb(233, 29, 29);
-      padding: 1rem;
+      padding: 0.1rem 1rem;
       display: grid;
       // grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
       // gap: 0.9rem;
@@ -224,6 +229,41 @@
           right: 3%;
           top: 2%;
         }
+      }
+    }
+  }
+  .linka {
+    background-color: rgba(215, 6, 6, 0.824);
+    padding: 0.5rem;
+    width: 100%;
+    font-weight: bolder;
+
+    display: none;
+    @media (max-width: 470px) {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      padding: 0.8rem;
+      overflow-x: auto;
+      background-color: white;
+    }
+    .chair {
+      display: flex;
+      gap: 0.4rem;
+      // flex-direction: column;
+      align-items: center;
+      background-color: #c3e4e4;
+      border-radius: 1.3rem;
+      padding: 0.3rem 0.6rem;
+
+      border: 1px solid rgba(128, 128, 128, 0.382);
+
+      .bed {
+        width: 15px;
+        height: 15px;
+      }
+      .nalu {
+        font-size: 0.7rem;
       }
     }
   }

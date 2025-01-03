@@ -4,12 +4,18 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  // display: none;
+  // @media (max-width: 920px) {
+  //   display: block;
+  //   flex-direction: row;
+  // }
   .filter1 {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0.4rem 0.7rem;
     gap: 0.5rem;
+    width: 20%;
     border: 1px solid rgba(103, 98, 98, 0.38);
     background-color: aliceblue;
     border-radius: 0.3rem;

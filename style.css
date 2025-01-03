@@ -7,7 +7,7 @@
 
 body {
   font-family: "Roboto", serif;
-  background-color: aqua;
+  background-color: white;
 }
 
 nav {
@@ -298,8 +298,13 @@ nav .furniture1 .join1 {
 .main-section .main2 .items {
   padding: 1rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  gap: 0.9rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+@media (max-width: 540px) {
+  .main-section .main2 .items {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 .main-section .main2 .items .items1 {
   background-color: white;
@@ -312,6 +317,20 @@ nav .furniture1 .join1 {
   border-radius: 0.3rem;
   position: relative;
 }
+@media (max-width: 540px) {
+  .main-section .main2 .items .items1 {
+    font-size: 0.8rem;
+    font-weight: bolder;
+    padding: 1rem 0.5rem;
+  }
+}
+@media (max-width: 390px) {
+  .main-section .main2 .items .items1 {
+    padding: 0.5rem;
+    font-size: 0.6rem;
+    font-weight: bolder;
+  }
+}
 .main-section .main2 .items .items1 .items2 {
   width: 100%;
 }
@@ -320,6 +339,12 @@ nav .furniture1 .join1 {
   height: 250px;
   -o-object-fit: contain;
      object-fit: contain;
+}
+@media (max-width: 540px) {
+  .main-section .main2 .items .items1 .items2 .din {
+    width: 100%;
+    height: 100px;
+  }
 }
 .main-section .main2 .items .items1 .cash {
   color: gray;
